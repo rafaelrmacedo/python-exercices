@@ -15,4 +15,5 @@
 number = int(input("Type a number: "))
 
 for count in range(1, number + 1):
-    print(f"{count}° line: {count}")
+    for count2 in range(1, number):
+        print(f"{count}° line: {count}")

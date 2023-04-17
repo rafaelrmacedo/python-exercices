@@ -6,13 +6,13 @@ number = int(input("Type a number and you know if it's prime or not: "))
 if number > 1:
     for i in range(2, number):
         if number % i == 0:
-            print("It's not a prime number")
+            print(number, ' não é primo')
             break
-        else:
-            print("It's prime number")
+    else:
+        print(number, ' é primo')
 elif number == 0:
-    print("It's zero. Not a prime number")
+    print(number, ' é zero')
 elif number == 1:
-    print("It's one. Not a prime number")
+    print(number, ' é um')
 else:
-    print("It's negative. Not a prime number")
+    print(number, ' é negative')

@@ -1,0 +1,73 @@
+GET http://localhost:5000/produto HTTP/1.1
+
+###
+
+POST http://localhost:5000/produto
+Content-Type: application/json
+
+{
+    "descricao": "Produto Novo",
+    "estoque": 50
+}
+
+###
+
+PUT http://localhost:5000/produto/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "descricao": "Produto Atualizado",
+    "estoque": 30
+}
+
+###
+
+DELETE http://localhost:5000/produto/1 HTTP/1.1
+
+###
+
+GET http://localhost:5000/produtosSemEstoque HTTP/1.1
+
+###
+
+GET http://localhost:5000/produtosComEstoqueBaixo HTTP/1.1
+
+###
+
+GET http://localhost:5000/produtosComEstoqueInferior/10 HTTP/1.1
+
+###
+
+GET http://localhost:5000/produtosComEstoqueSuperior/20 HTTP/1.1
+
+###
+
+GET http://localhost:5000/produtosPorCategoria/Eletrônicos HTTP/1.1
+
+###
+
+GET http://localhost:5000/movies HTTP/1.1
+
+###
+
+POST http://localhost:5000/movies HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Filme Novo",
+    "year": 2023
+}
+
+###
+
+PUT http://localhost:5000/movies/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Filme Atualizado",
+    "year": 2023
+}
+
+###
+
+DELETE http://localhost:5000/movies/1 HTTP/1.1
